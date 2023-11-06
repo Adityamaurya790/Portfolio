@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+
+
+body {
+  background-color: #CCC8AA;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: #F1EFEF;
+  overflow: hidden;
+}
+
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  
+
+}
+
+nav ul li a:hover {
+
+  border: 5px solid black;
+  border-radius: 10px;
+  
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left"> Aditya Maurya</div>
+        <div class="right">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+             
+                <li><a href="project.html">PROJECTS</a></li>
+                <li><a href="aboutMe.html">ABOUT</a></li>
+                <li><a href="contact-me.html">CONTACT ME</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Hire Me for Your Project</h1>
+
+    <form id="hireForm">
+        <div class="form-group">
+            <label for="projectName">Project Name</label>
+            <input type="text" class="form-control" id="projectName" placeholder="Enter project name" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Project Description</label>
+            <textarea class="form-control" id="description" rows="3" placeholder="Enter project description" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // JavaScript for form validation
+    document.getElementById('hireForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        let projectName = document.getElementById('projectName').value;
+        let description = document.getElementById('description').value;
+        let email = document.getElementById('email').value;
+
+        if (projectName.trim() === '' || description.trim() === '' || email.trim() === '') {
+            alert('Please fill in all fields');
+        } else {
+            // Send the form data to the server or perform other actions here
+            // For example, you can use AJAX to send the data to the server
+            console.log('Form submitted:', projectName, description, email);
+            alert('Form submitted successfully!');
+            document.getElementById('hireForm').reset();
+        }
+    });
+</script>
+</body>
+</html>

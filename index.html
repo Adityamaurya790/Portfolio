@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Maurya</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Aditya Maurya</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="hier_me.html">HIER ME</a></li>
+                    
+                    <li><a href="aboutMe.html">ABOUT</a></li>
+                    <li><a href="contact-me.html">CONTACT ME</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection"> Hello !
+                <div>I am <span class="blue">Aditya Maurya</span> <br> &amp; I am a passionate </div>
+                <span id="element"></span>
+
+                <div>
+                    <button class="btn" id="downloadButton"><a href="Modern Minimalist CV Resume.pdf"> Download Resume</a>
+                    </button>
+                    
+                    <button class="btn"><a href="https://github.com/Adityamaurya790" target="_blank">Visit Github</a></button>
+                </div>
+                
+            </div>
+
+
+            <div class="rightsection">
+                <img src="Aditya-removebg-preview.png">
+            </div>
+        </section>
+
+        <section class="secondsection">
+            <hr> 
+            What i have done so far
+            <h1>Projects and Experiences</h1>
+        
+
+        <div class="box">
+            <div class="vertical"> 
+                <img class="image-top" src="images.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer [2021-2022]
+                    </div>
+            </div>
+            <div class="vertical"> 
+                <img class="image-top" src="boot.jpeg" alt="">
+                <div class="vertical-title">Bootstrap Developer [2022-2023]</div>
+            </div>
+            
+            <div class="vertical"> 
+                <img class="image-top" src="node.png" alt="">
+                <div class="vertical-title">
+                    Node js. Developer [2022-2023]
+                </div>
+            </div>
+            
+            <div class="vertical"> 
+                <img class="image-top" src="angular.jpeg" alt="">
+                <div class="vertical-title">
+                    Angular Developer [2023-2024]
+                </div>
+            </div>
+
+            <div class="vertical"> 
+                <img class="image-top" src="react.png" alt="">
+                <div class="vertical-title">
+                    React Developer [2023-2024]
+                </div>
+            </div>
+           
+
+
+            
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="about-me">
+                    <h3>Aditya Maurya's Portfolio</h3>
+                    <p>Thanks for your visit.</p>
+                </div>
+                <div class="contact">
+                    <h3>Contact Me</h3>
+                    <p>Email: adityamaurya790@gmail.com</p>
+                </div>
+                <div class="social-media">
+                    <h3>Social Media</h3>
+                    <a href="https://www.linkedin.com/in/aditya-maurya-747737246?utm_
+                    source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/Adityamaurya790" target="_blank">GitHub</a>
+                    <a href="https://instagram.com/adityamaurya8880?igshid=MzMyNGUyNmU2YQ==" target="_blank">Instagram</a>
+                    
+                </div>
+
+                <div class="social-images">
+                    <img src="LinkedIn.png" alt="#">
+                    <img src="github.png" alt="#">
+                    <img src="insta.png" alt="#">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- type js script link to animate the webpage -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Front-end Developer.', 'React Developer.', 'Video Editor.', '&amp; Figma Designer.'],
+            typeSpeed: 70,
+            loop:true,
+        });
+ 
+    document.getElementById('downloadButton').addEventListener('click', function() {
+        // Replace 'path_to_your_pdf_file.pdf' with the actual path or URL of your PDF file
+        var pdfURL = 'path_to_your_pdf_file.pdf';
+        var link = document.createElement('a');
+        link.href = pdfURL;
+        link.download = 'filename.pdf'; // Change the downloaded file name here
+        link.click();
+    });
+    </script>
+</body>
+
+</html>
