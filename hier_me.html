@@ -86,11 +86,11 @@ nav ul li a:hover {
     </form>
 </div>
 
-<!-- Bootstrap JS and jQuery -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
-    // JavaScript for form validation
+  
     document.getElementById('hireForm').addEventListener('submit', function(event) {
         event.preventDefault();
         
@@ -101,9 +101,7 @@ nav ul li a:hover {
         if (projectName.trim() === '' || description.trim() === '' || email.trim() === '') {
             alert('Please fill in all fields');
         } else {
-            // Send the form data to the server or perform other actions here
-            // For example, you can use AJAX to send the data to the server
-            console.log('Form submitted:', projectName, description, email);
+           console.log('Form submitted:', projectName, description, email);
             alert('Form submitted successfully!');
             document.getElementById('hireForm').reset();
         }
